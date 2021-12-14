@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="maindesign.css">
+    <meta charset="utf-8">
+    <meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<header><h1><a href=index.html>Katharine Brumback</a></h1></header></head>
+
+
+
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="actor.html">Actor</a></li>
+            <li><a href="reel.html">Reel</a></li>
+            <li><a href="model.html">Model</a></li>
+            <li><a href="blog.html">Blogger</a></li>
+            <li><a href="contact.html">Contact</a></li>        </ul>
+    </nav>   
+<div>
+    <body>
+        <center><h1>Home</h1></center>
+        <div class="slideshow-container" >
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="BIO.test.jpg" class="center" style="width:50%">
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="model3.jpg" class="center" style="width:50%">
+          <div class="text"></div>
+        </div>
+        <div id="main"><section><h3><li>Actor</li>
+        <li>Creator</li>
+        <li>Cyclist</li>
+        <li>Model</li>
+        <li>Photographer</li>
+        <li>Web Developer
+
+        </li></div>
+    </h3>
+    </section>
+
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+    
+
+
+</div>
+
+<footer>
+    <br><i>Website created and handled by Katharine Brumback</i>
+    <br>This document was last modified on:
+<script>
+document.write(document.lastModified);
+</script>
+<br>
+</footer>
+
+</html>
